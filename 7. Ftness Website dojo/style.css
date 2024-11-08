@@ -1,0 +1,775 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+:root {
+    --primary-color: #00ff00;
+    --secondary-color: #ff00ff;
+    --accent-color: #00ffff;
+    --text-color: #ffffff;
+    --bg-color: #000000;
+    --card-bg-color: #111111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+/* Header styles */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    text-shadow: 0 0 10px var(--primary-color);
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Hero section styles */
+#hero {
+    background-image: url("https://source.unsplash.com/1600x900/?fitness,gym");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes glow {
+    from {
+        text-shadow:
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 15px var(--primary-color),
+            0 0 20px var(--primary-color);
+    }
+    to {
+        text-shadow:
+            0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 30px var(--primary-color),
+            0 0 40px var(--primary-color);
+    }
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: all 0.6s;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 255, 0, 0.3);
+}
+
+/* About section styles */
+#about {
+    padding: 100px 0;
+    background-color: var(--card-bg-color);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: right;
+    position: relative;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.about-image::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: 20px;
+    bottom: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+.about-image:hover::before {
+    top: -10px;
+    left: -10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Services section styles */
+#services {
+    padding: 100px 0;
+    background-color: var(--bg-color);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: var(--card-bg-color);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--primary-color), transparent);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.service-card:hover::before {
+    top: 0;
+    opacity: 0.1;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 255, 0, 0.2);
+}
+
+.service-card i {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover i {
+    transform: scale(1.1) rotate(360deg);
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.service-card p {
+    color: #999;
+}
+
+/* Membership section styles */
+#membership {
+    padding: 100px 0;
+    background-color: var(--card-bg-color);
+}
+
+.membership-plans {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.plan-card {
+    background-color: var(--bg-color);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.plan-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 255, 0, 0.1) 0%, rgba(0, 255, 0, 0) 70%);
+    transition: all 0.5s ease;
+}
+
+.plan-card:hover::before {
+    top: -20%;
+    left: -20%;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 255, 0, 0.2);
+}
+
+.plan-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.plan-price {
+    font-size: 36px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.plan-features {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.plan-features li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+    color: #999;
+}
+
+.plan-features li::before {
+    content: "\2713";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Trainers section styles */
+#trainers {
+    padding: 100px 0;
+    background-color: var(--bg-color);
+}
+
+.trainers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.trainer-card {
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.trainer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 255, 0, 0.2);
+}
+
+.trainer-image {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+}
+
+.trainer-card:hover .trainer-image {
+    transform: scale(1.1);
+}
+
+.trainer-info {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+}
+
+.trainer-card:hover .trainer-info {
+    background-color: rgba(0, 255, 0, 0.8);
+}
+
+.trainer-info h3 {
+    margin-bottom: 10px;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.trainer-card:hover .trainer-info h3 {
+    color: var(--bg-color);
+}
+
+.trainer-info p {
+    color: #999;
+    font-style: italic;
+    transition: all 0.3s ease;
+}
+
+.trainer-card:hover .trainer-info p {
+    color: var(--bg-color);
+}
+
+.trainer-social {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.trainer-card:hover .trainer-social {
+    opacity: 1;
+    bottom: 30px;
+}
+
+.trainer-social a {
+    color: var(--bg-color);
+    font-size: 18px;
+    transition: all 0.3s ease;
+    background-color: var(--primary-color);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trainer-social a:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.2);
+}
+
+/* Testimonials section styles */
+#testimonials {
+    padding: 100px 0;
+    background-color: var(--card-bg-color);
+}
+
+.testimonial-slider {
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.testimonial-slide {
+    text-align: center;
+    padding: 40px;
+}
+
+.testimonial-slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.testimonial-slide:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+}
+
+.testimonial-slide p {
+    font-style: italic;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #999;
+}
+
+.testimonial-slide .client-name {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Gallery section styles */
+#gallery {
+    padding: 100px 0;
+    background-color: var(--bg-color);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover::after {
+    opacity: 1;
+}
+
+/* Blog section styles */
+#blog {
+    padding: 100px 0;
+    background-color: var(--card-bg-color);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.blog-card {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 255, 0, 0.2);
+}
+
+.blog-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.blog-content p {
+    margin-bottom: 20px;
+    color: #999;
+}
+
+.read-more {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    color: var(--primary-color);
+}
+
+/* Contact section styles */
+#contact {
+    padding: 100px 0;
+    background-color: var(--bg-color);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: var(--card-bg-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--card-bg-color);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: var(--text-color);
+    font-size: 24px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .about-content,
+    .membership-plans {
+        flex-direction: column;
+    }
+
+    .about-text,
+    .about-image {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .plan-card {
+        margin-bottom: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .service-card,
+    .plan-card,
+    .trainer-card,
+    .blog-card {
+        padding: 20px;
+    }
+
+    .testimonial-slide img {
+        width: 80px;
+        height: 80px;
+    }
+}
