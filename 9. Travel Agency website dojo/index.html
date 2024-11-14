@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trygone - Your Ultimate Travel Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">Trygone</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="auth-button login-button" onclick="openModal('login')">Login</button>
+                <button class="auth-button signup-button" onclick="openModal('signup')">Sign Up</button>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="parallax">
+        <div class="hero-content fade-in">
+            <h1>Discover Your Next Adventure</h1>
+            <p>Experience unforgettable journeys with Trygone</p>
+            <a href="#booking" class="cta-button">Book Now</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Trygone</h2>
+        <div class="about-content slide-in">
+            <div class="about-text">
+                <p>Trygone is your gateway to extraordinary travel experiences. We specialize in crafting bespoke journeys that cater to your unique desires and preferences. With our expert team of travel enthusiasts, we ensure that every trip is an unforgettable adventure.</p>
+                <p>From luxurious getaways to thrilling expeditions, we've got you covered. Let us take care of the details while you focus on creating lasting memories.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1121&q=80" alt="Travel Experience">
+            </div>
+        </div>
+    </section>
+
+    <section id="destinations" class="parallax">
+        <h2>Popular Destinations</h2>
+        <div class="destination-grid slide-in">
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1420&q=80" alt="Paris">
+                <div class="destination-info">
+                    <h3>Paris, France</h3>
+                    <p>Experience the city of love and lights</p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://www.travelandleisure.com/thmb/KE0vV7K8Ngvc_7j-_FGx_jCUdCM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg" alt="Bali">
+                <div class="destination-info">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Relax on pristine beaches and explore lush jungles</p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="New York">
+                <div class="destination-info">
+                    <h3>New York, USA</h3>
+                    <p>Discover the city that never sleeps</p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tokyo">
+                <div class="destination-info">
+                    <h3>Tokyo, Japan</h3>
+                    <p>Immerse yourself in a unique blend of tradition and modernity</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid slide-in">
+            <div class="service-card">
+                <i class="fas fa-plane"></i>
+                <h3>Flight Booking</h3>
+                <p>Find the best deals on flights worldwide</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-hotel"></i>
+                <h3>Hotel Reservations</h3>
+                <p>Book luxurious accommodations at competitive prices</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Tour Packages</h3>
+                <p>Explore curated tour packages for unforgettable experiences</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-car"></i>
+                <h3>Car Rentals</h3>
+                <p>Rent a car for convenient travel at your destination</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-ship"></i>
+                <h3>Cruise Bookings</h3>
+                <p>Embark on luxurious sea voyages to exotic destinations</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-hiking"></i>
+                <h3>Adventure Tours</h3>
+                <p>Experience thrilling outdoor activities and expeditions</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="parallax">
+        <h2>Book Your Trip</h2>
+        <div class="booking-form slide-in">
+            <form>
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <input type="text" id="destination" name="destination" required>
+                </div>
+                <div class="form-group">
+                    <label for="departure">Departure Date</label>
+                    <input type="date" id="departure" name="departure" required>
+                </div>
+                <div class="form-group">
+                    <label for="return">Return Date</label>
+                    <input type="date" id="return" name="return" required>
+                </div>
+                <div class="form-group">
+                    <label for="travelers">Number of Travelers</label>
+                    <input type="number" id="travelers" name="travelers" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="trip-type">Trip Type</label>
+                    <select id="trip-type" name="trip-type" required>
+                        <option value="">Select Trip Type</option>
+                        <option value="leisure">Leisure</option>
+                        <option value="business">Business</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="luxury">Luxury</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Search Availability</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-slider slide-in">
+            <div class="testimonial">
+                <p>"Trygone made our honeymoon absolutely perfect. Every detail was taken care of, and we could just relax and enjoy our time together."</p>
+                <span class="testimonial-author">- Akshat Sharma</span>
+            </div>
+            <div class="testimonial">
+                <p>"I've traveled with many agencies, but Trygone stands out. Their attention to detail and personalized service is unmatched."</p>
+                <span class="testimonial-author">- Aditya gulab jamun</span>
+            </div>
+            <div class="testimonial">
+                <p>"Our family vacation was a dream come true, thanks to Trygone. They planned activities that everyone enjoyed, from the kids to the grandparents."</p>
+                <span class="testimonial-author">- Aditya RAi</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="parallax">
+        <h2>Travel Gallery</h2>
+        <div class="gallery-grid slide-in">
+           
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1581351721010-8cf859cb14a4?ixlib=rb-4.0.3&ixid=M3wxM
+
+jA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Machu Picchu, Peru">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Dubai, UAE">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1525721653822-f9975a57cd4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Venice, Italy">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1506&q=80" alt="Amsterdam, Netherlands">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Taj Mahal, India">
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Travel Blog</h2>
+        <div class="blog-grid slide-in">
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Hidden Gems of Southeast Asia">
+                <div class="blog-info">
+                    <h3>Hidden Gems of Southeast Asia</h3>
+                    <p>Discover the lesser-known wonders of Southeast Asia in our latest travel guide.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Top 10 Mountain Getaways">
+                <div class="blog-info">
+                    <h3>Top 10 Mountain Getaways</h3>
+                    <p>Escape to these breathtaking mountain retreats for your next vacation.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Culinary Adventures: Street Food Edition">
+                <div class="blog-info">
+                    <h3>Culinary Adventures: Street Food Edition</h3>
+                    <p>Embark on a gastronomic journey through the world's best street food scenes.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video" class="parallax">
+        <h2>Experience Trygone</h2>
+        <div class="video-container slide-in">
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="4010941-uhd_3840_2160_25fps.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-content slide-in">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>Have questions or ready to plan your next adventure? Reach out to us!</p>
+                <p><i class="fas fa-envelope"></i> Email: info@trygone.com</p>
+                <p><i class="fas fa-phone"></i> Phone: +91 (123) 456-7890</p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: B-17 Patel nagar, Bhopal, 462022</p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Trygone</h3>
+                <p>Trygone is your trusted partner for unforgettable travel experiences. We're dedicated to making your dream vacations a reality.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#booking">Book Now</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cancellation Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Trygone Travel Agency. All rights reserved. <br>Designed by Amit KAtare</p>
+        </div>
+    </footer>
+    <script>
+        const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links li');
+
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('active');
+                burger.classList.toggle('toggle');
+            });
+        }
+        navSlide();
+    </script>
+</body>
+</html>
