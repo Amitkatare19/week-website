@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trygone - Innovative Multi-Vendor Marketplace</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="#" class="logo">Trygone</a>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="auth-buttons">
+          <button class="btn" id="loginBtn">Login</button>
+          <button class="btn" id="signupBtn">Sign Up</button>
+        </div>
+        <button class="theme-toggle" aria-label="Toggle dark/light mode">
+          🌓
+        </button>
+        <div class="menu-toggle">☰</div>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div class="hero-background"></div>
+      <div class="hero-content">
+        <h1>Welcome to Trygone</h1>
+        <p>
+          Experience the future of multi-vendor marketplaces with our innovative
+          platform.
+        </p>
+        <a href="#features" class="btn">Explore Features</a>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <h2 class="section-title">Our Features</h2>
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">🏪</div>
+            <h3>Multi-Vendor Support</h3>
+            <p>
+              Create your own store and start selling with our cutting-edge
+              platform.
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🔍</div>
+            <h3>Advanced Search</h3>
+            <p>
+              Find exactly what you're looking for with our AI-powered search
+              tools.
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">⭐</div>
+            <h3>Reviews & Ratings</h3>
+            <p>
+              Build trust with our blockchain-verified customer reviews and
+              ratings.
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">💳</div>
+            <h3>Secure Payments</h3>
+            <p>
+              Process payments safely with our state-of-the-art encryption
+              system.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Create an Account</h3>
+            <p>
+              Sign up as a buyer or seller with our seamless onboarding process.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>List Your Products</h3>
+            <p>
+              Easily add and manage your product listings with our intuitive
+              dashboard.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Start Selling</h3>
+            <p>
+              Reach customers globally and grow your business on our innovative
+              platform.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+          <div class="product-item">
+            <div class="product-image">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="Smart Home Hub"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Smart Home Hub</h3>
+              <p class="product-price">Rs.1999/-</p>
+            </div>
+            <div class="product-overlay">
+              <a href="#" class="btn">View Details</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQTU37XUO67sAz1sFrp4Vb2oMcuuJ2ril17ZUxpJgFWvNBxSTptDmru3oyZf35LAgIfbpM-E1Bvl493dIIkCrKPB21DNvxFHexN3y-_4emp0aPh1oKq--hZ&usqp=CAE"
+                alt="Eco-Friendly Backpack"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Eco-Friendly Backpack</h3>
+              <p class="product-price">Rs.3000/-</p>
+            </div>
+            <div class="product-overlay">
+              <a href="#" class="btn">View Details</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image">
+              <img
+                src="https://m.media-amazon.com/images/I/314JY8idqtL._SX300_SY300_QL70_FMwebp_.jpg"
+                alt="Wireless Earbuds"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Wireless Earbuds</h3>
+              <p class="product-price">Rs.1299/-</p>
+            </div>
+            <div class="product-overlay">
+              <a href="#" class="btn">View Details</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image">
+              <img
+                src="https://m.media-amazon.com/images/I/718wMnaOE5L._SX679_.jpg"
+                alt="Digital Art Frame"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Digital Art Frame</h3>
+              <p class="product-price">Rs.2499/-</p>
+            </div>
+            <div class="product-overlay">
+              <a href="#" class="btn">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Our Users Say</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial-item">
+            <p>
+              "Trygone has revolutionized the way I run my online business. The
+              multi-vendor support is fantastic!"
+            </p>
+            <h4>- John Banega Don</h4>
+          </div>
+          <div class="testimonial-item">
+            <p>
+              "As a buyer, I love the variety of products and the secure payment
+              system. Shopping has never been easier!"
+            </p>
+            <h4>- Achar Sharma</h4>
+          </div>
+          <div class="testimonial-item">
+            <p>
+              "The AI-powered search feature helps me find exactly what I need.
+              Trygone is a game-changer!"
+            </p>
+            <h4>- Chhota don</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question">How do I become a vendor on Trygone?</div>
+            <div class="faq-answer">
+              To become a vendor, simply sign up for an account and choose the
+              vendor option during registration. You'll then be guided through
+              the process of setting up your store.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">What payment methods are accepted?</div>
+            <div class="faq-answer">
+              We accept a wide range of payment methods including credit cards,
+              PayPal, and various cryptocurrencies to ensure convenience for all
+              our users.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">How does the review system work?</div>
+            <div class="faq-answer">
+              Our review system is blockchain-verified to ensure authenticity.
+              Only customers who have made a purchase can leave a review,
+              maintaining the integrity of our ratings.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog">
+      <div class="container">
+        <h2 class="section-title">Latest from Our Blog</h2>
+        <div class="blog-grid">
+          <div class="blog-item">
+            <h3>The Future of E-commerce: AI and Machine Learning</h3>
+            <p>
+              Explore how artificial intelligence is shaping the future of
+              online marketplaces...
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+          <div class="blog-item">
+            <h3>5 Tips for Successful Online Selling</h3>
+            <p>
+              Learn the secrets to boosting your sales and growing your online
+              business...
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+          <div class="blog-item">
+            <h3>Understanding Blockchain in E-commerce</h3>
+            <p>
+              Discover how blockchain technology is revolutionizing online
+              transactions...
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h2 class="section-title">Stay Updated</h2>
+        <p>
+          Subscribe to our newsletter for the latest updates and exclusive
+          offers.
+        </p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="about-us">
+      <div class="container">
+        <h2 class="section-title">About Trygone</h2>
+        <p>
+          Trygone is a cutting-edge multi-vendor marketplace that leverages the
+          latest technologies to provide a seamless experience for both buyers
+          and sellers. Our mission is to revolutionize e-commerce by creating a
+          platform that is secure, efficient, and user-friendly.
+        </p>
+        <p>
+          Founded in 2024, we've quickly grown to become a leader in the
+          industry, thanks to our innovative approach and commitment to customer
+          satisfaction. Join us in shaping the future of online shopping!
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2024 Trygone. All rights reserved.</p>
+        <p>Designed by Amit Katare</p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+      });
+
+      // Theme toggle
+      const themeToggle = document.querySelector(".theme-toggle");
+      themeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("light-mode");
+        themeToggle.textContent = document.body.classList.contains("light-mode")
+          ? "🌙"
+          : "🌓";
+      });
+
+      // FAQ toggle
+      const faqQuestions = document.querySelectorAll(".faq-question");
+      faqQuestions.forEach((question) => {
+        question.addEventListener("click", () => {
+          const faqItem = question.parentElement;
+          faqItem.classList.toggle("active");
+        });
+      });
+
+     
+
+    </script>
+  </body>
+</html>
